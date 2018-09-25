@@ -52,9 +52,10 @@ class Dog
     sql <<-SQL
       SELECT *
       FROM dogs
-      WHERE id = l
+      WHERE id = ?
       LIMIT 1 
-    SQLL
+    SQL
+    DB[:conn].execute
   end
   
 end
