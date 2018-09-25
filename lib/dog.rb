@@ -43,7 +43,8 @@ class Dog
   end
   
   def self.create(hash) 
-    student = hash.each do {|attribute| self.send("#{attribute}=",value} end
+    student = hash.each do {|attribute| self.send("#{attribute}=",value} 
+    end
     student.save
   end
   
