@@ -43,8 +43,7 @@ class Dog
   end
   
   def self.create(hash_attr) 
-    hash_attr.each do |attribute|
-    end
+    
   end
   
 end
