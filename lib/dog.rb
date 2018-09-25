@@ -52,7 +52,8 @@ class Dog
     sql <<-SQL
       SELECT *
       FROM dogs
-      WHERE 
+      WHERE id = l
+      LIMIT 1 
     SQLL
   end
   
